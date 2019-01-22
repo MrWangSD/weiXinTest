@@ -1,1 +1,49 @@
 /* pages/camera/camera.wxss */
+.cameraContainer{
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  background: #000;
+  top: 0;
+}
+
+.camera{
+  width: 100vw;
+  height: calc(80vh - 30px);
+}
+
+.footer{
+  background: #000;
+  height: 20vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.takePhotoBtn{
+  background: rgba(255, 255, 255, 0.8);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: calc(10vh - 30px);
+  left: 50%;
+  margin-left: -30px;
+}
+
+.photoPreview{
+  position:absolute;
+  left: 5vw;
+  height: 15vh;
+  width: 18.75vw;
+  top: calc(10vh - 7.5vh);
+  background: #fff;
+}
+
+.exchangePosition{
+  position:absolute;
+  right: 5vw;
+  width: 10vw;
+  top: 7vh;
+}

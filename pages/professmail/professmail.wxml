@@ -1,4 +1,13 @@
 <!--pages/professmail/profess mai l.wxml-->
 <view class="container">
-  <text>表白信</text>
+  <view animation="{{titleAnimation}}" class="title">致亲爱的{{nickName}}:</view>
+  <view 
+    wx:for="{{textList}}" 
+    wx:key="{{index}}"
+    animation="{{item.animation}}"
+    class="textParam"
+    style="opacity: {{item.opacity}}; transform: translate({{item.translateX}}px, {{item.translateY}}px); -ms-transform: translate({{item.translateX}}px, {{item.translateY}}px); -webkit-transform: translate({{item.translateX}}px, {{item.translateY}}px);"
+  >
+    <text>{{item.text}}</text>
+  </view>
 </view>

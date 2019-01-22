@@ -14,7 +14,7 @@
       {
         "pagePath": "pages/index/index",
         "text": "专属认证",
-        "iconPath": "./image/confirmIcon.png"
+        "iconPath": "./image/pigIcon.png"
       },
       {
         "pagePath": "pages/professwall/professwall",
@@ -25,13 +25,18 @@
         "pagePath": "pages/professmail/professmail",
         "text": "表白信",
         "iconPath": "./image/mailIcon.png"
+      },
+      {
+        "pagePath": "pages/camera/camera",
+        "text": "相机",
+        "iconPath": "./image/bookIcon.png"
       }
     ]
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "To My Heart",
     "navigationBarTextStyle": "black"
   },
   "resizable": false

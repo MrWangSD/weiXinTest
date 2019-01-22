@@ -4,9 +4,9 @@
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 验证身份 </button>
     <block wx:else>
       <!--userInfo.nickName == '是饼干呀🍪' && -->
-      <image bindtap="{{userInfo.gender == 1 ? 'bindViewTap' : ''}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <image bindtap="{{userInfo.nickName == '是饼干呀🍪' && userInfo.gender == 2 ? 'bindViewTap' : ''}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <view wx:if="{{userInfo.gender == 1}}">
+      <view wx:if="{{userInfo.nickName == '是饼干呀🍪' && userInfo.gender == 2}}">
         <view class="text-param" animation="{{animationOne}}">
           <text>终于等到你，还好我没放弃</text>
         </view>

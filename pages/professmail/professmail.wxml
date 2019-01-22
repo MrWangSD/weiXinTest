@@ -1,0 +1,4 @@
+<!--pages/professmail/profess mai l.wxml-->
+<view class="container">
+  <text>表白信</text>
+</view>

@@ -3,22 +3,28 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/audio/audio",
-    "pages/camera/camera"
+    "pages/camera/camera",
+    "pages/professmail/professmail",
+    "pages/professwall/professwall"
   ],
   "tabBar": {
-    "position": "top",
+    "position": "bottom",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "专属认证",
+        "iconPath": "./image/confirmIcon.png"
       },
       {
-        "pagePath": "pages/audio/audio",
-        "text": "音频"
+        "pagePath": "pages/professwall/professwall",
+        "text": "表白墙",
+        "iconPath": "./image/wallIcon.png"
       },
       {
-        "pagePath": "pages/camera/camera",
-        "text": "相机"
+        "pagePath": "pages/professmail/professmail",
+        "text": "表白信",
+        "iconPath": "./image/mailIcon.png"
       }
     ]
   },
@@ -27,5 +33,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "resizable": false
 }

@@ -1,12 +1,28 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 验证身份 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <!--userInfo.nickName == '是饼干呀🍪' && -->
+      <image bindtap="{{userInfo.gender == 1 ? 'bindViewTap' : ''}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view wx:if="{{userInfo.gender == 1}}">
+        <view class="text-param" animation="{{animationOne}}">
+          <text>终于等到你，还好我没放弃</text>
+        </view>
+        <view class="text-param" animation="{{animationTwo}}">
+          <text>你就是对的人，就是我命中注定的人</text>
+        </view>
+        <view animation="{{animationThree}}">
+          <image src="../../image/heartPlane.jpeg" mode="aspectFit" style="width: 120px; height: 120px"></image>
+        </view>
+      </view>
+      <view wx:else>
+        <text>你不是我要的那个人</text>
+      </view>
     </block>
   </view>
+  <!--
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
@@ -16,4 +32,5 @@
     <open-data type="userGender" lang="zh_CN"></open-data>
     <official-account></official-account>
   </view>
+  -->
 </view>

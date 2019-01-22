@@ -1,0 +1,19 @@
+<!--pages/professwall/professwall.wxml-->
+<view class="container">
+  <image class="aspectFill" src="../../image/wall.jpeg" mode="aspectFill"></image>
+  <view 
+    wx:for="{{textList}}" 
+    wx:key="{{item.text+index}}" 
+    class="wallText" 
+    style="top:{{item.top}}px; transform: translateX({{item.translateX}}px); -ms-transform: translateX({{item.translateX}}px); -webkit-transform: translateX({{item.translateX}}px);" 
+    animation="{{item.animation}}"
+  >
+    <text style="color:{{item.color}}">{{item.text}}</text>
+  </view>
+  <!--
+  <view>
+    <button type="primary" bindtap="showAnimation">开启表白</button>
+  </view>
+  -->
+</view>
+
